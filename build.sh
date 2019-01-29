@@ -8,7 +8,7 @@ echo $compileScript
 eval $compileScript
 
 # Copy jar installer classes
-unzip -o -d target/classes/ lib/jarinstaller-0.2.0.jar -x META-INF/MANIFEST.MF
+unzip -o -d target/classes/ lib/jarinstaller-0.3.0.jar -x META-INF/MANIFEST.MF
 
 # Build jar
 jarScript="jar cfe target/jas-$version.jar se.bjornblomqvist.Jas -C target/classes/ se -C target/classes/ jarinstaller -C target/classes/ dependencies"
