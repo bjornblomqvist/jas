@@ -8,6 +8,13 @@ to use java in places like build scripts, startup scripts, configuration.
 Create class from the script file where all methods definitions end up as static methods in a class and all the 
 code is run in the static context of the class.
 
+## Installation
+
+    curl -OL https://github.com/bjornblomqvist/jas/releases/download/0.3.0/jas-0.3.0.jar
+    java -jar jas-0.3.0.jar --install
+    export PATH=$PATH:$HOME/.jars/bin
+    jas --help
+
 ## Usage example v1
 
 __Run a script__

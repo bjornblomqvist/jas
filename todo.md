@@ -13,8 +13,8 @@
 - Simple download and install from github
     - Creata a release
 
-    curl -O https://github.com/bjornblomqvist/jas/releases/download/0.2.0/jas-0.2.0.jars
-    java -jar jas-0.2.0.jar --install
+    curl -OL https://github.com/bjornblomqvist/jas/releases/download/0.3.0/jas-0.3.0.jar
+    java -jar jas-0.3.0.jar --install
     export PATH=$PATH:$HOME/.jars/bin
     jas
 
