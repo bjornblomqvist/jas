@@ -1,34 +1,30 @@
 # Java as script POC
 
-The idea is to be able to write and use java as if was a script language. Run
-source files use shebang.
+The idea is to be able to write and use java as if it was a script language. This should enable java developers
+to use java in places like build scripts, startup scripts, configuration.
 
-## Goals
+## TODO
 
 **V1**
 
-//- A commandline runner
-//- Support for shebang
+- A commandline runner
+- Support for shebang
 - Support for import statements
-- Make it installable with bash script like RVM and others
-  Use jarinstaller =)
+- Easy to install
 
 **V2**
 
-- Simple way to include decencies (require)
+- Simple way to include decencies from script.
 
 **V3**
 
 - Support declaring methods
 - Support declaring classes
 
-## Implementation ideas
+## Implementation idea
 
-My plan is to create class from the script file where all methods definitions end up
-as static methods in a class and all the code is run in the static context of the class.
-
-To make it really useful it must be easy to include other libraries.
-
+Create class from the script file where all methods definitions end up as static methods in a class and all the 
+code is run in the static context of the class.
 
 ## Usage example v1
 

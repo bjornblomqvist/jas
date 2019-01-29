@@ -1,0 +1,10 @@
+#!/usr/bin/env jas
+
+import static se.bjornblomqvist.Require.require;
+
+require("./lib/log4j-1.2.17.jar");
+import org.apache.log4j.Logger;
+
+Logger logger = Logger.getLogger("A test");
+logger.debug("Who ho!!!");
+logger.debug("Who ho!!!");

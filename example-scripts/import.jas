@@ -1,0 +1,10 @@
+#!/usr/bin/env jas
+
+import java.io.File;
+
+System.out.println("Files:");
+System.out.println("");
+
+for (String fileName : new File(".").list()) {
+    System.out.println(fileName);
+}
