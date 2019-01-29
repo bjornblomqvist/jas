@@ -4,17 +4,19 @@
 - Faster startup with nailgun or simalear
 - Have a compile cache. MD5 of source
 - Error message for require that is wrong
+- Document how to build/contribute
 
-# Before Max!
-- Simple download and install from github
+# Before sharing
+- JarInstaller should give the user a commandline that adds ~/.jars/bin to the path for the current bash instance
+    - New release of jar installer that prints out how to update the current $PATH    
     
+- Simple download and install from github
+    - Creata a release
+
     curl -O https://github.com/bjornblomqvist/jas/releases/download/0.2.0/jas-0.2.0.jars
     java -jar jas-0.2.0.jar --install
     export PATH=$PATH:$HOME/.jars/bin
     jas
-    
-- JarInstaller should give the user a commandline that adds ~/.jars/bin to the path for the current bash instance
-- Document how to build 
 
 # 2019-01-26
 
