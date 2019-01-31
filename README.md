@@ -44,8 +44,10 @@ _test2.jas_
 
 _test3.jas_
 
-    require("log4j:log4j:1.2.17");
+    import static se.bjornblomqvist.Require.require;
+
+    require("/tmp/log4j-1.2.17.jar");
     import org.apache.log4j.Logger;
-        
+    
     Logger logger = Logger.getLogger("Test.js");
     logger.info("hello world");
