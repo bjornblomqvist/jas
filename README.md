@@ -20,34 +20,40 @@ code is run in the static context of the class.
 __Run a script__
 
 _test.jas_
+```
+System.out.println("hello world");
+```
 
-    System.out.println("hello world");
-
-    ~/dev$ jas test.jas
-    hello world
+```
+~/dev$ jas test.jas
+hello world
+```
 
 
 __Run with shebang__
 
 _test2.jas_
-
-    #!/usr/bin/jas
+```
+#!/usr/bin/jas
     
-    System.out.println("hello world");
+System.out.println("hello world");
+```
 
-
-    ~/dev$ ./test.jas
-    hello world
+```
+~/dev$ ./test.jas
+hello world
+```
 
 
 ## V2 feature examples
 
 _test3.jas_
+```
+import static se.bjornblomqvist.Require.require;
 
-    import static se.bjornblomqvist.Require.require;
+require("/tmp/log4j-1.2.17.jar");
+import org.apache.log4j.Logger;
 
-    require("/tmp/log4j-1.2.17.jar");
-    import org.apache.log4j.Logger;
-    
-    Logger logger = Logger.getLogger("Test.js");
-    logger.info("hello world");
+Logger logger = Logger.getLogger("Test.js");
+logger.info("hello world");
+```
